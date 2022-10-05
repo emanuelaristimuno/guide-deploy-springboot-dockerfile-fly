@@ -10,11 +10,11 @@ Pre requisito: tener compilación de proyecto springboot en su computadora local
 
 A continuación, se detallan los pasos a seguir:
 
-1. Crear archivo **Dockerfile** , en la carpeta de tu proyecto springboot:
+*1. Crear archivo **Dockerfile** , en la carpeta de tu proyecto springboot:*
 
 ![](img/image001.jpg)
 
-2. Al archivo creado agregarle la dependencia necesaria para levantar jdk11 (por el momento solo jdk11-alpine) y la referencia del archivo **.jar** que contiene la compilación de nuestro proyecto springboot:
+*2. Al archivo creado agregarle la dependencia necesaria para levantar jdk11 (por el momento solo jdk11-alpine) y la referencia del archivo **.jar** que contiene la compilación de nuestro proyecto springboot:*
 
 Código base:
 
@@ -22,21 +22,24 @@ Código base:
  **MAINTAINER emaaristimuno** 
  **COPY**  **target/NAME-YOUR-FILE-BUILD-SPRINGBOOT.jar**  **NAME-YOUR-FILE-BUILD-SPRINGBOOT.jar** 
 **ENTRYPOINT ["java","-jar","/NAME-YOUR-FILE-BUILD-SPRINGBOOT.jar"]**
+
 Ejemplo:
 
 ![](img/image002.png)
 
 Para el ejemplo la compilación que se tendrá en cuenta para crear la imagen se encuentra dentro de la carpeta  **target** :
 **target/demo-0.0.1-SNAPSHOT.jar** 
+
 ![](img/image003.jpg)
 
 3. Instalar utilidad de comandos para trabajar con Fly:  **flyctl** . Ejecutando en Powershell de Windows:
 
-**iwr [https://fly.io/install.ps1](https://fly.io/install.ps1) -useb | iex**
+**iwr** **[https://fly.io/install.ps1](https://fly.io/install.ps1)** **-useb** **|** **iex**
 
 Ref: [https://fly.io/docs/hands-on/install-flyctl/](https://fly.io/docs/hands-on/install-flyctl/)
 
 4. Si esta es tu primera vez con Fly.io, tu próximo paso será [Registrarte](https://fly.io/docs/hands-on/sign-up/) . Elegir  **Try Fly.io for Free**  como plan para comenzar.
+
 
 ![](img/image004.jpg)
 
