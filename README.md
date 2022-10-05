@@ -18,13 +18,13 @@ A continuación, se detallan los pasos a seguir:
 
 Código base:
 
-	`FROM amazoncorretto:11-alpine-jdk
+	FROM amazoncorretto:11-alpine-jdk
  
 	MAINTAINER emaaristimuno
  
-	COPY**  **target/NAME-YOUR-FILE-BUILD-SPRINGBOOT.jar** **NAME-YOUR-FILE-BUILD-SPRINGBOOT.jar
+	COPY target/NAME-YOUR-FILE-BUILD-SPRINGBOOT.jar NAME-YOUR-FILE-BUILD-SPRINGBOOT.jar
  
-	ENTRYPOINT ["java","-jar","/NAME-YOUR-FILE-BUILD-SPRINGBOOT.jar"]`
+	ENTRYPOINT ["java","-jar","/NAME-YOUR-FILE-BUILD-SPRINGBOOT.jar"]
 
 Ejemplo:
 
@@ -41,7 +41,7 @@ Para el ejemplo la compilación que se tendrá en cuenta para crear la imagen se
 `**iwr** **https://fly.io/install.ps1** **-useb** **|** **iex**`
 
 
-*4. Si esta es tu primera vez con Fly.io, tu próximo paso será [Registrarte](https://fly.io/docs/hands-on/sign-up/) .*
+*4. Si esta es tu primera vez con Fly.io, tu próximo paso será [Registrarte](https://fly.io/docs/hands-on/sign-up/).*
  Elegir  **Try Fly.io for Free**  como plan para comenzar.
 
 
@@ -49,13 +49,13 @@ Para el ejemplo la compilación que se tendrá en cuenta para crear la imagen se
 
 *5. Iniciar sesión en Fly:*
 
- `**fly auth signup**`
+ `fly auth signup`
 
 *6. Desplegar nuestra aplicación en los servidores de fly. *
 
-6.1 Ejecutando los siguientes comandos dentro del directorio donde se encuentra el dockerfile:*
+6.1 Ejecutando los siguientes comandos dentro del directorio donde se encuentra el dockerfile:
 
- `**fly launch**`
+ `fly launch`
  
  ![](img/image005.jpg)
 
@@ -73,15 +73,15 @@ Referencia: https://fly.io/docs/languages-and-frameworks/dockerfile/
 
 Lo cual creara un archivo  **fly.toml**  con las configuraciones necesarias.
 
-6.4 Nos pregunta si queremos instalar una Base de Datos Postgresql, seleccionar que  **No** :
+6.4 Nos pregunta si queremos instalar una Base de Datos Postgresql, seleccionar que  **No**:
 
 ![](img/image007.png)
 
-6.5 Finalmente, generar nuestro Deploy respondiendo  **YES**  a la pregunta:
+6.5 Finalmente, generar nuestro Deploy respondiendo **YES** a la pregunta:
 
 ![](img/image008.jpg)
 
-*7. Abrir aplicaciones desplegadas en [https://fly.io/dashboard](https://fly.io/dashboard)*
+*7. Abrir aplicaciones desplegadas en [https://fly.io/dashboard](https://fly.io/dashboard):*
 
 ![](img/image009.png)
 
@@ -93,5 +93,4 @@ Lo cual creara un archivo  **fly.toml**  con las configuraciones necesarias.
 
 ![](img/image011.png)
 
-**AUTOR: LIC. En sistemas informáticos Emanuel Aristimuño **
-| --- | --- |
+**AUTOR: LIC. En sistemas informáticos Emanuel Aristimuño**
