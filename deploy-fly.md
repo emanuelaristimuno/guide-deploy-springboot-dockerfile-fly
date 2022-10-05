@@ -32,15 +32,14 @@ Ejemplo:
 
 Para el ejemplo la compilación que se tendrá en cuenta para crear la imagen se encuentra dentro de la carpeta  **target** :
 
-**target/demo-0.0.1-SNAPSHOT.jar** 
+*target/demo-0.0.1-SNAPSHOT.jar*
 
 ![](img/image003.jpg)
 
-*3. Instalar utilidad de comandos para trabajar con Fly:  **flyctl** . Ejecutando en Powershell de Windows:*
+*3. Instalar utilidad de comandos para trabajar con Fly:  [flyctl][https://fly.io/docs/hands-on/install-flyctl/]. Ejecutando en Powershell de Windows:*
 
-**iwr** **[https://fly.io/install.ps1](https://fly.io/install.ps1)** **-useb** **|** **iex**
+**iwr** **https://fly.io/install.ps1** **-useb** **|** **iex**
 
-Ref: [https://fly.io/docs/hands-on/install-flyctl/](https://fly.io/docs/hands-on/install-flyctl/)
 
 *4. Si esta es tu primera vez con Fly.io, tu próximo paso será [Registrarte](https://fly.io/docs/hands-on/sign-up/) .*
  Elegir  **Try Fly.io for Free**  como plan para comenzar.
@@ -61,14 +60,14 @@ Ref: [https://fly.io/docs/hands-on/install-flyctl/](https://fly.io/docs/hands-on
  ![](img/image005.jpg)
 
 
-Ref: https://fly.io/docs/languages-and-frameworks/dockerfile/
+Referencia: https://fly.io/docs/languages-and-frameworks/dockerfile/
 
   6.2 Definir un nombre para nuestra aplicación desplegada en Fly:
   
 ![](img/image006.jpg)
 
 
-  6.3 Seleccionar la región que levantara nuestra app:
+  6.3 Seleccionar la región que levantara nuestra app
 
 
 Lo cual creara un archivo  **fly.toml**  con las configuraciones necesarias.
@@ -81,7 +80,7 @@ Lo cual creara un archivo  **fly.toml**  con las configuraciones necesarias.
 
 ![](img/image008.jpg)
 
-7. Dirigirnos a nuestras aplicaciones desplegadas en [https://fly.io/dashboard](https://fly.io/dashboard)
+7. Abrir aplicaciones desplegadas en [https://fly.io/dashboard](https://fly.io/dashboard)
 
 ![](img/image009.png)
 
