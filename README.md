@@ -14,7 +14,7 @@ Pre requisito: tener compilación de proyecto springboot en su computadora local
 
 ![](img/image001.jpg)
 
-*2. Al archivo creado agregarle la dependencia necesaria para levantar jdk11 (ejemplo: amazoncorretto:11-alpine-jdk) y la referencia del archivo **.jar** que contiene la compilación de nuestro proyecto springboot:*
+*2. Al archivo creado agregarle la dependencia necesaria para levantar JDK11:amazoncorretto:11-alpine-jdk (Otros jdk: https://hub.docker.com/_/openjdk) y la referencia del archivo **.jar** que contiene la compilación de nuestro proyecto springboot:*
 
 
 	FROM amazoncorretto:11-alpine-jdk
