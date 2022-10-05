@@ -2,7 +2,7 @@
 
 *La siguiente guía sirve únicamente para generar el despliegue de una aplicación Springboot en la nube de fly.io de forma totalmente gratuita.*
 
-Para profundizar sobre la generación de imagenes **docker** de aplicaciones locales de springboot es necesario seguir la siguiente guía: [ **https://spring.io/guides/gs/spring-boot-docker/** ](https://spring.io/guides/gs/spring-boot-docker/)
+Para profundizar sobre la generación de imagenes **docker** de aplicaciones locales de springboot puede seguir la siguiente guía: [ **https://spring.io/guides/gs/spring-boot-docker/** ](https://spring.io/guides/gs/spring-boot-docker/)
 
 
 Pre requisito: tener compilación de proyecto springboot en su computadora local(Usar ejemplo de prueba: https://github.com/emanuelaristimuno/guide-deploy-springboot-dockerfile-fly).
