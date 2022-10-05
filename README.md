@@ -1,14 +1,14 @@
 # Desplegar aplicación Springboot en Fly.io usando Dockerfile
 
-Autor: Licenciado en Sistemas Informáticos Emanuel Aristimuño **https://www.linkedin.com/in/emanuel-aristimu%C3%B1o/** 
+*La siguiente guía sirve únicamente para generar el despliegue de una aplicación Springboot en la nube de fly.io de forma totalmente gratuita.*
 
-La siguiente guía sirve únicamente para generar el despliegue de una aplicación Springboot en la nube de fly.io de forma totalmente gratuita.
+Para profundizar sobre la generación de imagenes **docker** de aplicaciones locales de springboot es necesario seguir la siguiente guía: [ **https://spring.io/guides/gs/spring-boot-docker/** ](https://spring.io/guides/gs/spring-boot-docker/)
 
-Para poder **dockerizar** localmente una app es necesario seguir la siguiente guía: [ **https://spring.io/guides/gs/spring-boot-docker/** ](https://spring.io/guides/gs/spring-boot-docker/)
 
 Pre requisito: tener compilación de proyecto springboot en su computadora local.
 
-A continuación, se detallan los pasos a seguir:
+
+**A continuación, se detallan los pasos a seguir:**
 
 *1. Crear archivo **Dockerfile** , en la carpeta de tu proyecto springboot:*
 
@@ -16,7 +16,6 @@ A continuación, se detallan los pasos a seguir:
 
 *2. Al archivo creado agregarle la dependencia necesaria para levantar jdk11 (ejemplo: amazoncorretto:11-alpine-jdk) y la referencia del archivo **.jar** que contiene la compilación de nuestro proyecto springboot:*
 
-Código base:
 
 	FROM amazoncorretto:11-alpine-jdk
  
@@ -90,4 +89,4 @@ Referencia: https://fly.io/docs/languages-and-frameworks/dockerfile/
 
 ![](img/image011.png)
 
-**AUTOR: Licenciado en Sistemas Informáticos Emanuel Aristimuño**
+**Autor: Licenciado en Sistemas Informáticos Emanuel Aristimuño https://www.linkedin.com/in/emanuel-aristimu%C3%B1o/** 
