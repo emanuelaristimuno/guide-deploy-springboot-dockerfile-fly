@@ -14,7 +14,7 @@ A continuación, se detallan los pasos a seguir:
 
 ![](img/image001.jpg)
 
-*2. Al archivo creado agregarle la dependencia necesaria para levantar jdk11 (por el momento solo jdk11-alpine) y la referencia del archivo **.jar** que contiene la compilación de nuestro proyecto springboot:*
+*2. Al archivo creado agregarle la dependencia necesaria para levantar jdk11 (ejemplo: amazoncorretto:11-alpine-jdk) y la referencia del archivo **.jar** que contiene la compilación de nuestro proyecto springboot:*
 
 Código base:
 
@@ -36,7 +36,7 @@ Para el ejemplo la compilación que se tendrá en cuenta para crear la imagen se
 
 ![](img/image003.jpg)
 
-*3. Instalar utilidad de comandos para trabajar con Fly:  [flyctl][https://fly.io/docs/hands-on/install-flyctl/]. Ejecutando en Powershell de Windows:*
+*3. Instalar utilidad de comandos para trabajar con Fly:  [flyctl](https://fly.io/docs/hands-on/install-flyctl/). Ejecutando en Powershell de Windows:*
 
 `**iwr** **https://fly.io/install.ps1** **-useb** **|** **iex**`
 
