@@ -1,10 +1,10 @@
 # Desplegar aplicación Springboot en Fly.io usando Dockerfile
 
-Autor: Licenciado en Sistemas Informáticos Emanuel Aristimuño _ **https://www.linkedin.com/in/emanuel-aristimu%C3%B1o/** _
+Autor: Licenciado en Sistemas Informáticos Emanuel Aristimuño **https://www.linkedin.com/in/emanuel-aristimu%C3%B1o/** 
 
 La siguiente guía sirve únicamente para generar el despliegue de una aplicación Springboot en la nube de fly.io de forma totalmente gratuita.
 
-Para poder **dockerizar** localmente una app es necesario seguir la siguiente guía: [_ **https://spring.io/guides/gs/spring-boot-docker/** _](https://spring.io/guides/gs/spring-boot-docker/)
+Para poder **dockerizar** localmente una app es necesario seguir la siguiente guía: [ **https://spring.io/guides/gs/spring-boot-docker/** ](https://spring.io/guides/gs/spring-boot-docker/)
 
 Pre requisito: tener compilación de proyecto springboot en su computadora local.
 
@@ -12,79 +12,73 @@ A continuación, se detallan los pasos a seguir:
 
 1. Crear archivo **Dockerfile** , en la carpeta de tu proyecto springboot:
 
-![](img/image002.png)
+![](img/image001.jpg)
 
 2. Al archivo creado agregarle la dependencia necesaria para levantar jdk11 (por el momento solo jdk11-alpine) y la referencia del archivo **.jar** que contiene la compilación de nuestro proyecto springboot:
 
 Código base:
 
-_ **FROM amazoncorretto:11-alpine-jdk** _
-
-_ **MAINTAINER emaaristimuno** _
-
-_ **COPY** _ _ **target/NAME-YOUR-FILE-BUILD-SPRINGBOOT.jar** _ _ **NAME-YOUR-FILE-BUILD-SPRINGBOOT.jar** _
-
-_**ENTRYPOINT ["java","-jar","/NAME-YOUR-FILE-BUILD-SPRINGBOOT.jar"]**_
-
+ **FROM amazoncorretto:11-alpine-jdk** 
+ **MAINTAINER emaaristimuno** 
+ **COPY**  **target/NAME-YOUR-FILE-BUILD-SPRINGBOOT.jar**  **NAME-YOUR-FILE-BUILD-SPRINGBOOT.jar** 
+**ENTRYPOINT ["java","-jar","/NAME-YOUR-FILE-BUILD-SPRINGBOOT.jar"]**
 Ejemplo:
 
+![](img/image002.png)
+
+Para el ejemplo la compilación que se tendrá en cuenta para crear la imagen se encuentra dentro de la carpeta  **target** :
+**target/demo-0.0.1-SNAPSHOT.jar** 
 ![](img/image003.jpg)
 
-Para el ejemplo la compilación que se tendrá en cuenta para crear la imagen se encuentra dentro de la carpeta _ **target** _:
+3. Instalar utilidad de comandos para trabajar con Fly:  **flyctl** . Ejecutando en Powershell de Windows:
 
-_ **target/demo-0.0.1-SNAPSHOT.jar** _
+**iwr [https://fly.io/install.ps1](https://fly.io/install.ps1) -useb | iex**
+
+Ref: [https://fly.io/docs/hands-on/install-flyctl/](https://fly.io/docs/hands-on/install-flyctl/)
+
+4. Si esta es tu primera vez con Fly.io, tu próximo paso será [Registrarte](https://fly.io/docs/hands-on/sign-up/) . Elegir  **Try Fly.io for Free**  como plan para comenzar.
 
 ![](img/image004.jpg)
 
-1. Instalar utilidad de comandos para trabajar con Fly: _ **flyctl** _. Ejecutando en Powershell de Windows:
+5. Iniciar sesión en Fly:
 
-_**iwr [https://fly.io/install.ps1](https://fly.io/install.ps1) -useb | iex**_
+ **fly auth signup** 
 
-_Ref:_ [_https://fly.io/docs/hands-on/install-flyctl/_](https://fly.io/docs/hands-on/install-flyctl/)
+6. Desplegar nuestra aplicación en los servidores de fly. Ejecutando los siguientes comandos dentro del directorio donde se encuentra el dockerfile:
 
-1. Si esta es tu primera vez con Fly.io, tu próximo paso será [Registrarte](https://fly.io/docs/hands-on/sign-up/) . Elegir _ **Try Fly.io for Free** _ como plan para comenzar.
+ **fly launch** 
+
+Ref: https://fly.io/docs/languages-and-frameworks/dockerfile/
+
+  6.1. Definir un nombre para nuestra aplicación desplegada en Fly:
 
 ![](img/image005.jpg)
 
-1. Iniciar sesión en Fly:
-
-_ **fly** _ _ **auth** _ _ **signup** _
-
-1. Desplegar nuestra aplicación en los servidores de fly. Ejecutando los siguientes comandos dentro del directorio donde se encuentra el dockerfile:
-
-_ **fly launch** _
-
-_Ref:_ https://fly.io/docs/languages-and-frameworks/dockerfile/
-
-  1. Definir un nombre para nuestra aplicación desplegada en Fly:
+  6.2. Seleccionar la región que levantara nuestra app:
 
 ![](img/image006.jpg)
 
-  1. _Seleccionar la región que levantara nuestra app:_
+Lo cual creara un archivo  **fly.toml**  con las configuraciones necesarias.
 
-![](img/image007.jpg)
+  6.3 Nos pregunta si queremos instalar una Base de Datos Postgresql, seleccionar que  **No** :
 
-_Lo cual creara un archivo_ _ **fly.toml** _ _con las configuraciones necesarias._
+![](img/image007.png)
 
-  1. _Nos pregunta si queremos instalar una Base de Datos Postgresql, seleccionar que_ _ **No** __:_
+  6.4 Finalmente, generar nuestro Deploy respondiendo  **YES**  a la pregunta:
 
 ![](img/image008.jpg)
 
-  1. _Finalmente, generar nuestro Deploy respondiendo_ _ **YES** _ _a la pregunta:_
+7. Dirigirnos a nuestras aplicaciones desplegadas en [https://fly.io/dashboard](https://fly.io/dashboard)
 
-![](img/image009.jpg)
+![](img/image009.png)
 
-1. _Dirigirnos a nuestras aplicaciones desplegadas en_ [_https://fly.io/dashboard_](https://fly.io/dashboard)
+8. Seleccionar la app, Ejemplo:  **deploy-spring-dockerfile** 
 
-![](img/image010.jpg)
+![](img/image010.png)
 
-1. _Seleccionar la app, Ejemplo:_ _ **deploy-spring-dockerfile** _
+9. Verificar el correcto funcionamiento del servidor:
 
-![](img/image011.jpg)
+![](img/image011.png)
 
-1. _Verificar el correcto funcionamiento del servidor:_
-
-![](img/image012.jpg)
-
-| PEV - LIC. En sistemas informáticos Emanuel Aristimuño | 0 |
+**AUTOR: LIC. En sistemas informáticos Emanuel Aristimuño **
 | --- | --- |
