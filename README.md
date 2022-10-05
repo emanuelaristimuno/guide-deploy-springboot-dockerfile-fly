@@ -38,7 +38,7 @@ Para el ejemplo la compilación que se tendrá en cuenta para crear la imagen se
 
 *3. Instalar utilidad de comandos para trabajar con Fly:  [flyctl](https://fly.io/docs/hands-on/install-flyctl/). Ejecutando en Powershell de Windows:*
 
-`**iwr** **https://fly.io/install.ps1** **-useb** **|** **iex**`
+`iwr https://fly.io/install.ps1 -useb | iex`
 
 
 *4. Si esta es tu primera vez con Fly.io, tu próximo paso será [Registrarte](https://fly.io/docs/hands-on/sign-up/).*
@@ -68,10 +68,7 @@ Referencia: https://fly.io/docs/languages-and-frameworks/dockerfile/
 ![](img/image006.jpg)
 
 
-6.3 Seleccionar la región que levantara nuestra app
-
-
-Lo cual creara un archivo  **fly.toml**  con las configuraciones necesarias.
+6.3 Seleccionar la región que levantara nuestra app. Lo cual creara un archivo  **fly.toml**  con las configuraciones necesarias.
 
 6.4 Nos pregunta si queremos instalar una Base de Datos Postgresql, seleccionar que  **No**:
 
