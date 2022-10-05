@@ -59,8 +59,6 @@ Para el ejemplo la compilación que se tendrá en cuenta para crear la imagen se
  ![](img/image005.jpg)
 
 
-Referencia: https://fly.io/docs/languages-and-frameworks/dockerfile/
-
 6.2 Definir un nombre para nuestra aplicación desplegada en Fly:
   
   
@@ -88,5 +86,9 @@ Referencia: https://fly.io/docs/languages-and-frameworks/dockerfile/
 *9. Verificar el correcto funcionamiento del servidor:*
 
 ![](img/image011.png)
+
+
+Referencia: https://fly.io/docs/languages-and-frameworks/dockerfile/
+
 
 **Autor: Licenciado en Sistemas Informáticos Emanuel Aristimuño https://www.linkedin.com/in/emanuel-aristimu%C3%B1o/** 
