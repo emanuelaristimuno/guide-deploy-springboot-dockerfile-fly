@@ -51,7 +51,7 @@ Para el ejemplo la compilación que se tendrá en cuenta para crear la imagen se
 
  `fly auth signup`
 
-*6. Desplegar nuestra aplicación en los servidores de fly. *
+*6. Desplegar nuestra aplicación en los servidores de fly.*
 
 6.1 Ejecutando los siguientes comandos dentro del directorio donde se encuentra el dockerfile:
 
@@ -82,12 +82,12 @@ Referencia: https://fly.io/docs/languages-and-frameworks/dockerfile/
 
 ![](img/image009.png)
 
-*8. Seleccionar la app, Ejemplo:  **deploy-spring-dockerfile** *
+*8. Seleccionar la app, Ejemplo:  **deploy-spring-dockerfile***
 
 ![](img/image010.png)
 
-9. Verificar el correcto funcionamiento del servidor:
+*9. Verificar el correcto funcionamiento del servidor:*
 
 ![](img/image011.png)
 
-**AUTOR: LIC. En sistemas informáticos Emanuel Aristimuño**
+**AUTOR: Licenciado en Sistemas Informáticos Emanuel Aristimuño**
