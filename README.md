@@ -5,7 +5,7 @@
 Para profundizar sobre la generación de imagenes **docker** de aplicaciones locales de springboot es necesario seguir la siguiente guía: [ **https://spring.io/guides/gs/spring-boot-docker/** ](https://spring.io/guides/gs/spring-boot-docker/)
 
 
-Pre requisito: tener compilación de proyecto springboot en su computadora local.
+Pre requisito: tener compilación de proyecto springboot en su computadora local(Usar ejemplo de prueba: https://github.com/emanuelaristimuno/guide-deploy-springboot-dockerfile-fly).
 
 
 **A continuación, se detallan los pasos a seguir:**
@@ -52,7 +52,7 @@ Para el ejemplo la compilación que se tendrá en cuenta para crear la imagen se
 
 *6. Desplegar nuestra aplicación en los servidores de fly.*
 
-6.1 Ejecutando los siguientes comandos dentro del directorio donde se encuentra el dockerfile:
+6.1 Ejecutar los comandos dentro del directorio donde se encuentra el dockerfile:
 
  `fly launch`
  
