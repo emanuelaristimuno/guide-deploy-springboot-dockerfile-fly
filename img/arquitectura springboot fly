@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-11-23T18:17:09.959Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="B18d67Rh2Vk7m_cPOa-s" version="20.5.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-11-23T18:21:05.864Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="HGnd5qO3pkHhuQVQVpHy" version="20.5.3" type="github">
   <diagram name="Page-1" id="7a6c530e-6e37-e111-ec74-82921da8cc10">
     <mxGraphModel dx="1048" dy="556" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="1169" pageHeight="826" background="#184380" math="0" shadow="0">
       <root>
@@ -11,19 +11,15 @@
           <mxGeometry x="1286" y="291" width="150" height="420" as="geometry" />
         </mxCell>
         <mxCell id="23046e2b9bb16c14-27" value="" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeWidth=2;fillColor=#719BC6;fontSize=12;fontColor=#000000;align=center;strokeColor=none;arcSize=3;" parent="1" vertex="1">
-          <mxGeometry x="726" y="291" width="530" height="420" as="geometry" />
+          <mxGeometry x="781" y="275.5" width="530" height="420" as="geometry" />
         </mxCell>
-        <mxCell id="JWt-HVWgZFCZMGrub5CJ-17" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.031;entryY=0.409;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=17;" edge="1" parent="1" source="23046e2b9bb16c14-28" target="JWt-HVWgZFCZMGrub5CJ-15">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="JWt-HVWgZFCZMGrub5CJ-17" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=17;" edge="1" parent="1" source="23046e2b9bb16c14-28">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="850" y="607" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="23046e2b9bb16c14-28" value="" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeWidth=2;fillColor=#F04D22;fontSize=12;fontColor=#FFFFFF;align=center;strokeColor=none;arcSize=6;verticalAlign=top;" parent="1" vertex="1">
           <mxGeometry x="490" y="520" width="180" height="175.5" as="geometry" />
-        </mxCell>
-        <mxCell id="23046e2b9bb16c14-74" style="html=1;startArrow=none;startFill=0;startSize=10;endArrow=none;endFill=0;endSize=10;strokeWidth=3;fontSize=11;fontColor=#FFFFFF;strokeColor=#FFFFFF;rounded=0;edgeStyle=elbowEdgeStyle;elbow=vertical;" parent="1" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1086" y="566.6666666666667" as="sourcePoint" />
-            <mxPoint x="1036" y="566.6666666666667" as="targetPoint" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="23046e2b9bb16c14-70" style="edgeStyle=orthogonalEdgeStyle;html=1;startArrow=none;startFill=0;startSize=10;endArrow=none;endFill=0;endSize=10;strokeWidth=3;fontSize=11;fontColor=#FFFFFF;strokeColor=#FFFFFF;dashed=1;rounded=0;" parent="1" target="23046e2b9bb16c14-68" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -214,14 +210,14 @@
             <mxPoint x="5" y="7" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="JWt-HVWgZFCZMGrub5CJ-15" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/compute/Azure_Spring_Cloud.svg;" vertex="1" parent="1">
-          <mxGeometry x="932.5" y="548" width="143.5" height="143.5" as="geometry" />
-        </mxCell>
         <mxCell id="JWt-HVWgZFCZMGrub5CJ-18" value="" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.weblogos.java;strokeColor=#A9C4EB;fontSize=17;fillColor=#719BC6;" vertex="1" parent="1">
-          <mxGeometry x="940" y="468.5" width="34.4" height="65" as="geometry" />
+          <mxGeometry x="884" y="533" width="80" height="130" as="geometry" />
         </mxCell>
         <mxCell id="JWt-HVWgZFCZMGrub5CJ-19" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.abstract.summation_point;strokeColor=#A9C4EB;fontSize=17;fillColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="988.88" y="490" width="30.75" height="31" as="geometry" />
+          <mxGeometry x="980" y="589" width="30.75" height="31" as="geometry" />
+        </mxCell>
+        <mxCell id="JWt-HVWgZFCZMGrub5CJ-21" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/compute/Azure_Spring_Cloud.svg;strokeColor=#A9C4EB;fillColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="533" width="152" height="152" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
