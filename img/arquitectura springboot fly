@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-11-24T05:39:09.836Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="c7o2Vi4FXLp33r5DDq34" version="20.5.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-11-24T05:49:10.706Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="J2YA7ctheHSZEhzh4jgN" version="20.5.3" type="github">
   <diagram name="Page-1" id="7a6c530e-6e37-e111-ec74-82921da8cc10">
     <mxGraphModel dx="1447" dy="695" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="1169" pageHeight="826" background="#184380" math="0" shadow="0">
       <root>
@@ -40,9 +40,6 @@
         </mxCell>
         <mxCell id="23046e2b9bb16c14-83" value="C" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;shadow=0;fontSize=11;fontColor=#FFFFFF;fontStyle=1;arcSize=50;" parent="1" vertex="1">
           <mxGeometry x="1406" y="680" width="20" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="23046e2b9bb16c14-113" value="Arquitectura Multiplataforma" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;rounded=0;shadow=0;fontColor=#FFFFFF;" parent="1" vertex="1">
-          <mxGeometry x="122" y="160" width="1510" height="40" as="geometry" />
         </mxCell>
         <mxCell id="JWt-HVWgZFCZMGrub5CJ-1" value="" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.azure.user" parent="1" vertex="1">
           <mxGeometry x="328.4" y="580" width="37.6" height="40" as="geometry" />
@@ -153,6 +150,12 @@
             <mxPoint x="1082" y="351" as="sourcePoint" />
             <mxPoint x="1161.92" y="350.9599999999999" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="7vb9pr61kWo7qWGkHpsK-1" value="Servicios Cloud" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;rounded=0;shadow=0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="132" y="250" width="1510" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7vb9pr61kWo7qWGkHpsK-2" value="" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;strokeColor=#FF8000;fontSize=17;fillColor=none;dashed=1;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="440" y="510" width="1000" height="201" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
